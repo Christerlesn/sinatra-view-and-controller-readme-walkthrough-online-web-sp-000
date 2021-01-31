@@ -6,11 +6,11 @@ class App < Sinatra::Base
     erb :index
   end
 
-  post '/' do
-    params['username']
-    # @original_info = user.reverse
-    erb :indexed
-  end
+  # post '/' do
+  #   params['username']
+  #   # @original_info = user.reverse
+  #   erb :indexed
+  # end
 
   get '/reverse' do
     erb :reverse
