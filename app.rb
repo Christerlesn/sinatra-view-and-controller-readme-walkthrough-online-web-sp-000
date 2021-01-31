@@ -7,7 +7,8 @@ class App < Sinatra::Base
   end
 
   post '/' do
-    @original_info = params['username'] + params['description']
+    @original_info = params['username']
+    @other_info = params['description']
     erb :indexed
   end
 
@@ -22,7 +23,7 @@ class App < Sinatra::Base
   end
 
   get '/friends' do
-    # Write your code here!
-
+    @friends = ['Emily Wilding Davison', 'Harriet Tubman', 'Joan of Arc', 'Malala Yousafzai', 'Sojourner Truth']
+    erb :friends
   end
 end
