@@ -7,8 +7,7 @@ class App < Sinatra::Base
   end
 
   post '/' do
-  #   params['username']
-    @original_info = params['username']
+    @original_info = params['username'] + params['description']
     erb :indexed
   end
 
