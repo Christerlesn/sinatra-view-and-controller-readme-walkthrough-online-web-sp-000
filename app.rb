@@ -7,8 +7,9 @@ class App < Sinatra::Base
   end
 
   post '/' do
-    "Hello World"
-    #erb :indexed
+    user = params['username']
+    @original_info = user.reverse
+    erb :indexed
   end
 
   get '/reverse' do
