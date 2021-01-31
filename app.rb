@@ -6,6 +6,10 @@ class App < Sinatra::Base
     erb :index
   end
 
+  post '/' do
+    erb :indexed
+  end
+
   get '/reverse' do
     erb :reverse
   end
