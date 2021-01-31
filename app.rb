@@ -8,7 +8,7 @@ class App < Sinatra::Base
 
   post '/' do
     "Hello World"
-    erb :indexed
+    #erb :indexed
   end
 
   get '/reverse' do
