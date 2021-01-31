@@ -8,7 +8,7 @@ class App < Sinatra::Base
 
   post '/' do
   #   params['username']
-  #   # @original_info = user.reverse
+    @original_info = params['username']
     erb :indexed
   end
 
